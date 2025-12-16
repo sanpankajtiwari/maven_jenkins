@@ -1,11 +1,20 @@
-public class HelloWorld {
-    public static void main(String[] args) {
-        // This is a single-line comment.
-        /*
-         * This is a multi-line comment.
-         * The code below prints "Hello, World!" to the console.
-         */
-        System.out.println("Hello, World!");
-    }
-}
+package com.mycompany;
 
+/**
+ * Hello world!
+ */
+public class App
+{
+    private final String message = "Hello World!";
+    // Testing CI
+    public App() {}
+
+    public static void main(String[] args) {
+        System.out.println(new App().getMessage());
+    }
+
+    private final String getMessage() {
+        return message;
+    }
+
+}
